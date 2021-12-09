@@ -82,7 +82,7 @@ DEFBASE  := -D'BASEDIR=$(BASEDIR)/'
 
 CFLAGS   += -O2
 CPPFLAGS += -Wall -Wno-misleading-indentation -I$(INCDIR) $(DEFBASE)
-CXXFLAGS += -g -O4 -fPIC -flto -pthread -std=c++17 -m64
+CXXFLAGS += -g -O4 -fPIC -flto -pthread -std=c++20 -m64
 LDFLAGS  += -Wl,--as-needed $(CXXFLAGS)
 
 FFLAGS   += -I$(INCDIR) -g -fno-underscoring
